@@ -21,12 +21,6 @@ def getResults():
     executable_path=chrome_driver_path, options=chrome_options
   )
 
-  # default search query
-  search_query = "life"
-  if (len(sys.argv) >= 2):
-    search_query = sys.argv[1]
-    print(search_query)
-
   with webdriver as driver:
       # Set timeout time
       wait = WebDriverWait(driver, 10)
@@ -64,7 +58,6 @@ def getResults():
         product_table_data.append(row)
 
       from tabulate import tabulate
-      # table = [['one', 'two', 'three'], ['four', 'five', 'six'], ['seven', 'eight', 'nine']]
       tabledata = tabulate(product_table_data, tablefmt='html')
       driver.close()
   return tabledata

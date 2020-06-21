@@ -35,3 +35,11 @@ The site will be loaded on localhost
 ```http://localhost:5000/```
 
 There is a screenshot which shows an example
+
+
+Related Articles
+https://medium.com/@mahmudahsan/how-to-scrap-data-from-javascript-based-website-using-python-selenium-and-headless-web-driver-531c7fe0c01f
+https://stackoverflow.com/questions/38133759/how-to-get-text-from-span-tag-in-beautifulsoup
+https://stackoverflow.com/questions/1475123/easiest-way-to-turn-a-list-into-an-html-table-in-python/54963455#54963455
+https://github.com/ireapps/first-web-scraper/blob/master/scrapers/crime/scrape.py
+https://medium.com/@raiyanquaium/how-to-web-scrape-using-beautiful-soup-in-python-without-running-into-http-error-403-554875e5abed
