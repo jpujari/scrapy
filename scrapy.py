@@ -75,6 +75,6 @@ def index():
   htmlcode = getResults()
   return htmlcode
 
-getResults()
+# getResults()
 #run this on command line
 # env FLASK_APP=scrapy.py flask run
