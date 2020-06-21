@@ -37,6 +37,8 @@ def getResults():
         product = div.find('h4', attrs={'class':'product-product'})
         price = div.find('span', attrs={'class': 'product-strike'})
         discountprice = div.find('span', attrs={'class': 'product-discountedPrice'})
+        productpricediv = div.find('div', attrs={'class': 'product-price'})
+        productprice = productpricediv.find('span')
         if brand:
             brandtext = brand.text
         else:
@@ -52,6 +54,7 @@ def getResults():
         if discountprice:
             discountpricetext = discountprice.text
         else:
+            pricetext = productprice.text
             discountpricetext = "No discount price"
         # print(pricetext)
         row = [brandtext, producttext, pricetext, discountpricetext]
