@@ -30,4 +30,8 @@ run the app from the command line
 
 ```env FLASK_APP=scrapy.py flask run```
 
+The site will be loaded on localhost
+
+```http://localhost:5000/```
+
 There is a screenshot which shows an example
