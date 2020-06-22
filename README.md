@@ -1,6 +1,10 @@
 # scrapy
 python scraping using selenium and beautiful soup
 
+How to setup an Environment?
+
+Option 1 
+
 Requirements
 
 ```
@@ -37,7 +41,32 @@ run the app from the command line
 
 The site will be loaded on localhost
 
-```http://localhost:5000/```
+```http://0.0.0.0:5000/```
+
+Option 2 (Dockerfile)
+
+Install Docker
+https://docs.docker.com/get-docker/
+
+Build the docker file
+
+```docker build -t scrapy .```
+
+Run the docker file 
+
+``` docker run -d -p 5000:5000 scrapy ```
+
+The site will be loaded on localhost
+
+```http://0.0.0.0:5000/```
+
+Kill the docker container
+
+```docker container ls```
+
+Get the container id from the command above
+
+```docker kill <container_id>```
 
 There is a screenshot which shows an example
 

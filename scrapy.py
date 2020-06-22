@@ -1,10 +1,5 @@
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support.expected_conditions import presence_of_element_located
-import time
-import sys
 from bs4 import BeautifulSoup
 from flask import Flask
 
@@ -17,6 +12,8 @@ def getResults():
   chrome_options = Options()
   chrome_options.add_argument('--headless')
   chrome_options.add_argument(f'user-agent={agent}')
+  chrome_options.add_argument("--no-sandbox");
+  chrome_options.add_argument("--disable-dev-shm-usage");
   webdriver = webdriver.Chrome(
     executable_path=chrome_driver_path, options=chrome_options
   )
@@ -72,5 +69,6 @@ def index():
   return htmlcode
 
 # getResults()
-#run this on command line
-# env FLASK_APP=scrapy.py flask run
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
