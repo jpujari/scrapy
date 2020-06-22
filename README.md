@@ -37,9 +37,9 @@ install the dependent packages
 
 ```pip install -r requirements.txt```
 
-run the app from the command line
+run the app from the command line from root
 
-```env FLASK_APP=scrapy.py flask run```
+```python3 scrapy.py```
 
 The site will be loaded on localhost
 
