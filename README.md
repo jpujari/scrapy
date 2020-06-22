@@ -3,7 +3,7 @@ python scraping using selenium and beautiful soup
 
 How to setup an Environment?
 
-Option 1 
+### Option 1 
 
 Requirements
 
@@ -12,7 +12,7 @@ Python3
 Pip
 ```
 
-Environment
+#### Environment
 
 Download chromedriver 
 https://chromedriver.chromium.org/downloads
@@ -43,7 +43,7 @@ The site will be loaded on localhost
 
 ```http://0.0.0.0:5000/```
 
-Option 2 (Dockerfile)
+### Option 2 (Dockerfile)
 
 Install Docker
 https://docs.docker.com/get-docker/
@@ -73,7 +73,11 @@ There is a screenshot which shows an example
 
 Related Articles
 https://medium.com/@mahmudahsan/how-to-scrap-data-from-javascript-based-website-using-python-selenium-and-headless-web-driver-531c7fe0c01f
+
 https://stackoverflow.com/questions/38133759/how-to-get-text-from-span-tag-in-beautifulsoup
+
 https://stackoverflow.com/questions/1475123/easiest-way-to-turn-a-list-into-an-html-table-in-python/54963455#54963455
+
 https://github.com/ireapps/first-web-scraper/blob/master/scrapers/crime/scrape.py
+
 https://medium.com/@raiyanquaium/how-to-web-scrape-using-beautiful-soup-in-python-without-running-into-http-error-403-554875e5abed
