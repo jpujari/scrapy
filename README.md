@@ -68,8 +68,10 @@ Get the container id from the command above
 
 ```docker kill <container_id>```
 
-There is a screenshot which shows an example
+## Screenshot
 
+There is a screenshot which shows an example of the output
+https://github.com/jpujari/scrapy/blob/master/Screen%20Shot%202020-06-21%20at%205.35.12%20PM.png
 
 ## Related Articles
 
