@@ -1,6 +1,8 @@
 # scrapy
 python scraping using selenium and beautiful soup
 
+## Installation
+
 How to setup an Environment?
 
 ### Option 1 
