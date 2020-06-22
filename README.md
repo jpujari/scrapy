@@ -18,8 +18,8 @@ Pip
 
 Download chromedriver 
 https://chromedriver.chromium.org/downloads
-The version of chromedriver should match your chrome browser version
-adjust chromedriver path in the script accordingly
+The version of chromedriver should match your chrome browser version.
+Adjust chromedriver path in the script accordingly.
 
 Install virutalenv
 
