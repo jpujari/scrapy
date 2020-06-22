@@ -10,8 +10,8 @@ How to setup an Environment?
 #### Requirements
 
 ```
-Python3
-Pip
+python3
+pip
 ```
 
 #### Environment
@@ -35,7 +35,7 @@ Activate the virtualenv
 
 install the dependent packages
 
-```pip install -r requirements.txt```
+```python3 -m pip install -r requirements.txt```
 
 run the app from the command line from root
 
