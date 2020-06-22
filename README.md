@@ -5,7 +5,7 @@ How to setup an Environment?
 
 ### Option 1 
 
-Requirements
+#### Requirements
 
 ```
 Python3
@@ -71,7 +71,8 @@ Get the container id from the command above
 There is a screenshot which shows an example
 
 
-Related Articles
+## Related Articles
+
 https://medium.com/@mahmudahsan/how-to-scrap-data-from-javascript-based-website-using-python-selenium-and-headless-web-driver-531c7fe0c01f
 
 https://stackoverflow.com/questions/38133759/how-to-get-text-from-span-tag-in-beautifulsoup
