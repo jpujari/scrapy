@@ -2,6 +2,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from bs4 import BeautifulSoup
 from flask import Flask
+from flask import send_file
 
 def getResults():
   from selenium import webdriver
@@ -57,16 +58,30 @@ def getResults():
         row = [brandtext, producttext, pricetext, discountpricetext]
         product_table_data.append(row)
 
-      from tabulate import tabulate
-      tabledata = tabulate(product_table_data, tablefmt='html')
       driver.close()
-  return tabledata
+  return product_table_data
+
+def getHtml():
+    product_table_data = getResults()
+    from tabulate import tabulate
+    tabledata = tabulate(product_table_data, tablefmt='html')
+    return tabledata
 
 app = Flask(__name__)
 @app.route("/")
 def index():
-  htmlcode = getResults()
+  htmlcode = getHtml()
   return htmlcode
+
+@app.route('/csv')
+def csv():
+    product_table_data = getResults()
+    import csv
+    with open("/tmp/data.csv", "w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerows(product_table_data)
+    path = "/tmp/data.csv"
+    return send_file(path, as_attachment=True)
 
 # getResults()
 
